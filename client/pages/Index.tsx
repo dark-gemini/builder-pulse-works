@@ -44,57 +44,156 @@ export default function Index() {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-accent/20 opacity-50" />
-        <div className="container mx-auto px-6 py-24">
-          <div className="max-w-4xl mx-auto text-center relative z-10">
-            <Badge
-              variant="outline"
-              className="mb-6 border-primary/50 text-primary bg-primary/10"
-            >
-              <Shield className="w-4 h-4 mr-2" />
-              Dark Gemini Intelligence Portal
-            </Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Darknet Threat Intelligence Dashboard
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-6 max-w-3xl mx-auto">
-              Detect Leaks, Monitor Chatter, Investigate Breaches in Real Time
-            </p>
+        <div className="container mx-auto px-6 py-20">
+          <div className="max-w-5xl mx-auto text-center relative z-10">
+            {/* Brand Header */}
+            <div className="flex items-center justify-center gap-4 mb-8">
+              <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                <Shield className="w-6 h-6 text-white" />
+              </div>
+              <div className="text-left">
+                <h1 className="text-2xl font-bold text-foreground">
+                  DarkIntel
+                </h1>
+                <p className="text-sm text-muted-foreground">
+                  Threat Intelligence Platform
+                </p>
+              </div>
+            </div>
 
-            {/* Context Block */}
-            <div className="bg-card/30 border border-primary/20 rounded-lg p-6 mb-8 max-w-4xl mx-auto">
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-accent rounded-full mt-2 animate-pulse" />
+            {/* Value Proposition */}
+            <div className="mb-8">
+              <h2 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                Real-Time Dark Web Monitoring
+              </h2>
+              <h3 className="text-xl md:text-2xl text-muted-foreground mb-6 max-w-4xl mx-auto">
+                for Threat Intelligence Teams
+              </h3>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
+                Track credentials, leaked data, malware mentions, and threat
+                actor chatter across forums, marketplaces, and Telegram
+                channels. Get actionable intelligence before threats impact your
+                organization.
+              </p>
+            </div>
+
+            {/* Trust Indicators */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div className="flex items-center justify-center gap-3 p-4 bg-card/30 rounded-lg border border-primary/20">
+                <Globe className="w-5 h-5 text-accent" />
                 <div className="text-left">
-                  <h3 className="text-sm font-semibold text-foreground mb-2">
-                    Demo Interface
+                  <div className="text-sm font-medium text-foreground">
+                    347+ Sources
+                  </div>
+                  <div className="text-xs text-muted-foreground">
+                    Forums & Markets
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-center gap-3 p-4 bg-card/30 rounded-lg border border-primary/20">
+                <Activity className="w-5 h-5 text-primary" />
+                <div className="text-left">
+                  <div className="text-sm font-medium text-foreground">
+                    Real-Time Updates
+                  </div>
+                  <div className="text-xs text-muted-foreground">
+                    24/7 Monitoring
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-center gap-3 p-4 bg-card/30 rounded-lg border border-primary/20">
+                <Shield className="w-5 h-5 text-accent" />
+                <div className="text-left">
+                  <div className="text-sm font-medium text-foreground">
+                    Enterprise Grade
+                  </div>
+                  <div className="text-xs text-muted-foreground">
+                    SOC2 Certified
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Data Transparency */}
+            <div className="bg-card/30 border border-warning/30 rounded-lg p-6 mb-8 max-w-4xl mx-auto">
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-warning rounded-full mt-2 animate-pulse" />
+                <div className="text-left">
+                  <h3 className="text-sm font-semibold text-foreground mb-2 flex items-center gap-2">
+                    <Clock className="w-4 h-4 text-warning" />
+                    Live Demo Environment
+                    <span className="text-xs text-muted-foreground">
+                      Last sync:{" "}
+                      {new Date().toLocaleString("en-US", {
+                        month: "short",
+                        day: "numeric",
+                        year: "numeric",
+                        hour: "2-digit",
+                        minute: "2-digit",
+                        timeZoneName: "short",
+                      })}
+                    </span>
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Built as a data visualization and security interface demo.
-                    This dashboard aggregates and analyzes darknet activity
-                    including credentials, exploits, and threat actor
-                    communications.
+                    This dashboard aggregates anonymized threat intelligence
+                    from 17+ underground sources including forums, marketplaces,
+                    and communication channels. Data is updated hourly and
+                    sanitized for demonstration purposes.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
+            {/* Primary CTAs */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold shadow-lg"
                 onClick={() => (window.location.href = "/operations")}
               >
                 <Eye className="w-5 h-5 mr-2" />
-                Access Intelligence Dashboard
+                See Live Feed
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-accent text-accent hover:bg-accent/10"
+                className="border-accent text-accent hover:bg-accent/10 px-8 py-4 text-lg font-semibold"
                 onClick={() => (window.location.href = "/ai-chat")}
               >
-                <Activity className="w-5 h-5 mr-2" />
-                Live Threat Analysis
+                <Users className="w-5 h-5 mr-2" />
+                Request Demo
               </Button>
+            </div>
+
+            {/* Secondary Actions */}
+            <div className="flex flex-wrap justify-center gap-3 text-sm">
+              <a
+                href="#features"
+                className="text-muted-foreground hover:text-primary transition"
+              >
+                View Features
+              </a>
+              <span className="text-muted-foreground">•</span>
+              <a
+                href="#pricing"
+                className="text-muted-foreground hover:text-primary transition"
+              >
+                Pricing
+              </a>
+              <span className="text-muted-foreground">•</span>
+              <a
+                href="/about"
+                className="text-muted-foreground hover:text-primary transition"
+              >
+                About
+              </a>
+              <span className="text-muted-foreground">•</span>
+              <a
+                href="/contact"
+                className="text-muted-foreground hover:text-primary transition"
+              >
+                Contact
+              </a>
             </div>
           </div>
         </div>
@@ -412,35 +511,82 @@ export default function Index() {
                       />
                     </div>
 
-                    {/* Intelligence Type Filters */}
+                    {/* Source Type Filters */}
                     <div>
                       <label className="block text-sm font-medium mb-3">
-                        Intelligence Type Filters
+                        Source Type Filters
                       </label>
-                      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
                         {[
                           {
-                            label: "Credentials",
-                            count: "2.4M",
-                            color: "destructive",
-                          },
-                          { label: "Malware", count: "156K", color: "accent" },
-                          {
-                            label: "Marketplace",
-                            count: "89K",
+                            label: "Forums",
+                            count: "1.2M",
                             color: "primary",
+                            icon: Users,
                           },
-                          { label: "Forum", count: "1.2M", color: "warning" },
-                        ].map((filter, idx) => (
+                          {
+                            label: "Marketplaces",
+                            count: "89K",
+                            color: "accent",
+                            icon: Globe,
+                          },
+                          {
+                            label: "Telegram",
+                            count: "456K",
+                            color: "warning",
+                            icon: MessageSquare,
+                          },
+                          {
+                            label: "Onion URLs",
+                            count: "234K",
+                            color: "destructive",
+                            icon: Shield,
+                          },
+                        ].map((filter, idx) => {
+                          const Icon = filter.icon;
+                          return (
+                            <Button
+                              key={idx}
+                              variant="outline"
+                              className={`justify-between h-auto py-3 border-${filter.color}/20 hover:bg-${filter.color}/10 group`}
+                            >
+                              <div className="flex items-center gap-2">
+                                <Icon className="w-4 h-4" />
+                                <span className="text-sm">{filter.label}</span>
+                              </div>
+                              <Badge
+                                variant="secondary"
+                                className="text-xs group-hover:bg-background"
+                              >
+                                {filter.count}
+                              </Badge>
+                            </Button>
+                          );
+                        })}
+                      </div>
+
+                      {/* Threat Category Tags */}
+                      <label className="block text-sm font-medium mb-3">
+                        Threat Categories
+                      </label>
+                      <div className="flex flex-wrap gap-2">
+                        {[
+                          "Credentials",
+                          "PII",
+                          "Credit Cards",
+                          "Crypto Wallets",
+                          "Ransomware",
+                          "Malware",
+                          "Exploits",
+                          "Data Breaches",
+                        ].map((tag, idx) => (
                           <Button
                             key={idx}
                             variant="outline"
-                            className={`justify-between h-auto py-3 border-${filter.color}/20 hover:bg-${filter.color}/10`}
+                            size="sm"
+                            className="text-xs h-7 border-muted hover:border-primary/50"
                           >
-                            <span className="text-sm">{filter.label}</span>
-                            <Badge variant="secondary" className="text-xs">
-                              {filter.count}
-                            </Badge>
+                            {tag}
                           </Button>
                         ))}
                       </div>
@@ -502,8 +648,50 @@ export default function Index() {
                         variant="outline"
                         className="border-warning text-warning hover:bg-warning/10"
                       >
-                        Advanced Query
+                        <TrendingUp className="w-4 h-4 mr-2" />
+                        Generate Report
                       </Button>
+                    </div>
+
+                    {/* Additional Features */}
+                    <div className="border-t border-primary/20 pt-6 space-y-4">
+                      <h4 className="text-sm font-medium text-foreground">
+                        Quick Actions
+                      </h4>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="justify-start gap-2"
+                        >
+                          <Shield className="w-4 h-4 text-destructive" />
+                          Investigate This Thread
+                        </Button>
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="justify-start gap-2"
+                        >
+                          <Globe className="w-4 h-4 text-accent" />
+                          View Source Details
+                        </Button>
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="justify-start gap-2"
+                        >
+                          <Users className="w-4 h-4 text-warning" />
+                          Track Threat Actor
+                        </Button>
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="justify-start gap-2"
+                        >
+                          <AlertTriangle className="w-4 h-4 text-primary" />
+                          Set Alert Rule
+                        </Button>
+                      </div>
                     </div>
                   </CardContent>
                 </Card>
