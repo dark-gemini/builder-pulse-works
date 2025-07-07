@@ -57,11 +57,17 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
         gemini: {
           dark: "#0d1226",
           deep: "#1a2036",
-          blue: "#007bff",
-          cyan: "#00bcd4",
+          blue: "#4285F4", // Official Gemini Blue
+          green: "#34A853", // Official Gemini Green
+          yellow: "#FBBC04", // Official Gemini Yellow
+          red: "#EA4335", // Official Gemini Red
           slate: {
             100: "#e2e8f0",
             300: "#cbd5e1",

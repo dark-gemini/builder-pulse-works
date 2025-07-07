@@ -58,7 +58,7 @@ export default function Index() {
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               Real-time threat detection and predictive security analytics for
-              next-generation crypto infrastructure
+              next-generation digital asset infrastructure
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -476,83 +476,319 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 border-t border-primary/20 bg-card/20">
+      <footer className="py-16 border-t border-primary/20 bg-card/20">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-lg font-semibold mb-4 text-primary">
-                Dark Gemini
+          {/* Main Footer Content */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+            {/* Brand Section */}
+            <div className="lg:col-span-2">
+              <h3 className="text-xl font-bold mb-4 text-primary">
+                Dark Gemini Intelligence
               </h3>
-              <p className="text-muted-foreground text-sm">
-                Next-generation crypto security intelligence platform powered by
-                quantum AI technology.
+              <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
+                Advanced AI-powered digital asset security platform providing
+                real-time threat detection, predictive analytics, and
+                quantum-resilient protection for blockchain infrastructure, DeFi
+                protocols, and institutional digital asset operations.
               </p>
+              <div className="space-y-2">
+                <div className="text-sm text-muted-foreground">
+                  Powered by{" "}
+                  <a
+                    href="https://gemini.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:text-accent transition-colors font-medium"
+                  >
+                    Gemini AI Technology
+                  </a>
+                </div>
+                <div className="text-xs text-muted-foreground">
+                  Enterprise-grade security • SOC2 Certified • 99.9% Uptime SLA
+                </div>
+              </div>
             </div>
+
+            {/* Digital Asset Security */}
             <div>
-              <h4 className="text-sm font-semibold mb-4">Intelligence</h4>
+              <h4 className="text-sm font-semibold mb-4 text-foreground">
+                Digital Asset Security
+              </h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <a href="#" className="hover:text-primary transition">
-                    Threat Detection
+                  <a
+                    href="/threat-detection"
+                    className="hover:text-primary transition"
+                  >
+                    Threat Detection AI
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary transition">
-                    Asset Recovery
+                  <a
+                    href="/wallet-monitoring"
+                    className="hover:text-primary transition"
+                  >
+                    Wallet Monitoring
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary transition">
-                    Dark Web Intel
+                  <a
+                    href="/smart-contract-auditing"
+                    className="hover:text-primary transition"
+                  >
+                    Smart Contract Auditing
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary transition">
-                    Compliance
+                  <a
+                    href="/defi-protection"
+                    className="hover:text-primary transition"
+                  >
+                    DeFi Protocol Protection
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/bridge-security"
+                    className="hover:text-primary transition"
+                  >
+                    Cross-Chain Bridge Security
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/nft-authentication"
+                    className="hover:text-primary transition"
+                  >
+                    NFT Authentication
                   </a>
                 </li>
               </ul>
             </div>
+
+            {/* AI Analytics */}
             <div>
-              <h4 className="text-sm font-semibold mb-4">Platform</h4>
+              <h4 className="text-sm font-semibold mb-4 text-foreground">
+                AI-Driven Analytics
+              </h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <a href="#" className="hover:text-primary transition">
-                    API Access
+                  <a
+                    href="/predictive-modeling"
+                    className="hover:text-primary transition"
+                  >
+                    Predictive Threat Modeling
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary transition">
-                    Documentation
+                  <a
+                    href="/behavioral-analysis"
+                    className="hover:text-primary transition"
+                  >
+                    Behavioral Analysis
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary transition">
-                    Integrations
+                  <a
+                    href="/pattern-recognition"
+                    className="hover:text-primary transition"
+                  >
+                    Pattern Recognition
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary transition">
-                    Support
+                  <a
+                    href="/risk-scoring"
+                    className="hover:text-primary transition"
+                  >
+                    Dynamic Risk Scoring
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/anomaly-detection"
+                    className="hover:text-primary transition"
+                  >
+                    Anomaly Detection
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/market-manipulation"
+                    className="hover:text-primary transition"
+                  >
+                    Market Manipulation Detection
                   </a>
                 </li>
               </ul>
             </div>
+
+            {/* Enterprise Solutions */}
             <div>
-              <h4 className="text-sm font-semibold mb-4">Contact</h4>
+              <h4 className="text-sm font-semibold mb-4 text-foreground">
+                Enterprise Solutions
+              </h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>intelligence@darkgemini.com</li>
-                <li>+1 (555) 123-4567</li>
-                <li>24/7 Emergency Response</li>
-                <li>Global Operations</li>
+                <li>
+                  <a
+                    href="/institutional-custody"
+                    className="hover:text-primary transition"
+                  >
+                    Institutional Custody
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/compliance-automation"
+                    className="hover:text-primary transition"
+                  >
+                    Compliance Automation
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/incident-response"
+                    className="hover:text-primary transition"
+                  >
+                    Incident Response
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/forensic-analysis"
+                    className="hover:text-primary transition"
+                  >
+                    Digital Forensics
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/asset-recovery"
+                    className="hover:text-primary transition"
+                  >
+                    Asset Recovery Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/white-label"
+                    className="hover:text-primary transition"
+                  >
+                    White-Label Solutions
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-primary/20 mt-8 pt-8 text-center text-sm text-muted-foreground">
-            <p>
-              &copy; 2025 Dark Gemini Labs. All rights reserved. Quantum-secured
-              intelligence platform.
-            </p>
+
+          {/* Technology Stack */}
+          <div className="border-t border-primary/20 pt-8 mb-8">
+            <h4 className="text-sm font-semibold mb-4 text-foreground">
+              Technology Stack & Integrations
+            </h4>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs text-muted-foreground">
+              <div>
+                <div className="font-medium text-foreground mb-2">
+                  Blockchain Networks
+                </div>
+                <div>
+                  Ethereum • Bitcoin • Polygon • Arbitrum • Optimism • Avalanche
+                  • Solana • Cosmos
+                </div>
+              </div>
+              <div>
+                <div className="font-medium text-foreground mb-2">
+                  AI & Machine Learning
+                </div>
+                <div>
+                  Large Language Models • Computer Vision • Neural Networks •
+                  Deep Learning • NLP
+                </div>
+              </div>
+              <div>
+                <div className="font-medium text-foreground mb-2">
+                  Security Protocols
+                </div>
+                <div>
+                  Zero-Knowledge Proofs • Multi-Signature • Hardware Security
+                  Modules • Quantum Cryptography
+                </div>
+              </div>
+              <div>
+                <div className="font-medium text-foreground mb-2">
+                  Compliance Standards
+                </div>
+                <div>
+                  SOC2 • ISO27001 • GDPR • CCPA • AML • KYC • FATF • MiCA
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Use Cases */}
+          <div className="border-t border-primary/20 pt-8 mb-8">
+            <h4 className="text-sm font-semibold mb-4 text-foreground">
+              Digital Asset Security Use Cases
+            </h4>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-muted-foreground">
+              <div>
+                <div className="font-medium text-foreground mb-2">
+                  Institutional Clients
+                </div>
+                <div>
+                  Hedge Funds • Family Offices • Investment Banks • Pension
+                  Funds • Insurance Companies • Central Banks
+                </div>
+              </div>
+              <div>
+                <div className="font-medium text-foreground mb-2">
+                  DeFi & Web3
+                </div>
+                <div>
+                  DEX Protocols • Lending Platforms • Yield Farming • Liquidity
+                  Pools • DAOs • DeFi Aggregators
+                </div>
+              </div>
+              <div>
+                <div className="font-medium text-foreground mb-2">
+                  Infrastructure Providers
+                </div>
+                <div>
+                  Custodians • Exchanges • Wallet Providers • Payment Processors
+                  • Node Operators • Validators
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Contact & Legal */}
+          <div className="border-t border-primary/20 pt-8 text-center">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+              <div className="text-sm text-muted-foreground">
+                &copy; 2025 Dark Gemini Labs. All rights reserved. •
+                <a
+                  href="/privacy"
+                  className="hover:text-primary transition ml-1"
+                >
+                  Privacy Policy
+                </a>{" "}
+                •
+                <a href="/terms" className="hover:text-primary transition ml-1">
+                  Terms of Service
+                </a>{" "}
+                •
+                <a
+                  href="/security"
+                  className="hover:text-primary transition ml-1"
+                >
+                  Security
+                </a>
+              </div>
+              <div className="text-sm text-muted-foreground">
+                Enterprise Digital Asset Security Platform • 24/7 Global
+                Operations • intelligence@darkgemini.com
+              </div>
+            </div>
           </div>
         </div>
       </footer>
