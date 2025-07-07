@@ -21,6 +21,10 @@ import {
   Globe,
   Users,
   CheckCircle,
+  Clock,
+  MessageSquare,
+  BarChart3,
+  DollarSign,
 } from "lucide-react";
 
 export default function Index() {
