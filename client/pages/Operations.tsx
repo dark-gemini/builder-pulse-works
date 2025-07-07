@@ -102,7 +102,7 @@ export default function Operations() {
             Operations Center
           </h1>
           <p className="text-muted-foreground">
-            Real-time threat monitoring and incident response
+            Real-time digital asset threat monitoring and incident response
           </p>
         </div>
 

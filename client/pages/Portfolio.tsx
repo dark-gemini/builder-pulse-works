@@ -147,7 +147,7 @@ export default function Portfolio() {
             Asset Portfolio
           </h1>
           <p className="text-muted-foreground">
-            Cross-chain asset tracking and risk monitoring
+            Cross-chain digital asset tracking and risk monitoring
           </p>
         </div>
 

@@ -165,7 +165,8 @@ export default function AIChat() {
             AI Security Analyst
           </h1>
           <p className="text-muted-foreground">
-            Intelligent threat analysis and security recommendations
+            Intelligent digital asset threat analysis and security
+            recommendations
           </p>
         </div>
 
