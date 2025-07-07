@@ -53,13 +53,30 @@ export default function Index() {
               <Shield className="w-4 h-4 mr-2" />
               Dark Gemini Intelligence Portal
             </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Quantum Intelligence
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Darknet Threat Intelligence Dashboard
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Real-time threat detection and predictive security analytics for
-              next-generation digital asset infrastructure
+            <p className="text-xl md:text-2xl text-muted-foreground mb-6 max-w-3xl mx-auto">
+              Detect Leaks, Monitor Chatter, Investigate Breaches in Real Time
             </p>
+
+            {/* Context Block */}
+            <div className="bg-card/30 border border-primary/20 rounded-lg p-6 mb-8 max-w-4xl mx-auto">
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-accent rounded-full mt-2 animate-pulse" />
+                <div className="text-left">
+                  <h3 className="text-sm font-semibold text-foreground mb-2">
+                    Demo Interface
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Built as a data visualization and security interface demo.
+                    This dashboard aggregates and analyzes darknet activity
+                    including credentials, exploits, and threat actor
+                    communications.
+                  </p>
+                </div>
+              </div>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
@@ -121,117 +138,47 @@ export default function Index() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Intelligence Operations
+              Darknet Intelligence Modules
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Advanced AI-driven modules for comprehensive threat detection and
-              asset protection
+              Real-time monitoring of underground markets, forums, and threat
+              actor communications
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-300 group">
+            <Card className="bg-card/50 backdrop-blur-sm border-destructive/20 hover:border-destructive/40 transition-all duration-300 group">
               <CardHeader>
                 <div className="flex items-center justify-between">
-                  <Shield className="w-8 h-8 text-primary group-hover:scale-110 transition-transform" />
+                  <Shield className="w-8 h-8 text-destructive group-hover:scale-110 transition-transform" />
                   <Badge
-                    variant="secondary"
-                    className="bg-primary/20 text-primary"
+                    variant="destructive"
+                    className="bg-destructive/20 text-destructive"
                   >
                     Active
                   </Badge>
                 </div>
-                <CardTitle className="text-xl">Cross-Chain Sentinel</CardTitle>
-                <CardDescription>
-                  Real-time monitoring across 40+ blockchain networks with
-                  predictive threat modeling
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <div className="flex justify-between text-sm">
-                    <span>Networks Monitored</span>
-                    <span className="text-primary font-medium">42</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span>Threats Detected</span>
-                    <span className="text-accent font-medium">1,247</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span>Response Time</span>
-                    <span className="text-primary font-medium">&lt;2.3s</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card/50 backdrop-blur-sm border-accent/20 hover:border-accent/40 transition-all duration-300 group">
-              <CardHeader>
-                <div className="flex items-center justify-between">
-                  <Zap className="w-8 h-8 text-accent group-hover:scale-110 transition-transform" />
-                  <Badge
-                    variant="secondary"
-                    className="bg-accent/20 text-accent"
-                  >
-                    Processing
-                  </Badge>
-                </div>
                 <CardTitle className="text-xl">
-                  Quantum Prediction Engine
+                  Credential Intelligence
                 </CardTitle>
                 <CardDescription>
-                  AI-powered threat prediction with 94.7% accuracy in attack
-                  vector identification
+                  Monitor stolen credentials, wallet leaks, and digital asset
+                  exposures across darknet databases
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
                   <div className="flex justify-between text-sm">
-                    <span>Prediction Accuracy</span>
-                    <span className="text-accent font-medium">94.7%</span>
+                    <span>Databases Monitored</span>
+                    <span className="text-destructive font-medium">847</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span>Models Running</span>
-                    <span className="text-primary font-medium">156</span>
+                    <span>Wallet Leaks Found</span>
+                    <span className="text-accent font-medium">12,847</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span>Data Points</span>
-                    <span className="text-accent font-medium">2.8M/sec</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-300 group">
-              <CardHeader>
-                <div className="flex items-center justify-between">
-                  <Lock className="w-8 h-8 text-primary group-hover:scale-110 transition-transform" />
-                  <Badge
-                    variant="secondary"
-                    className="bg-primary/20 text-primary"
-                  >
-                    Secure
-                  </Badge>
-                </div>
-                <CardTitle className="text-xl">Asset Recovery Matrix</CardTitle>
-                <CardDescription>
-                  Automated forensic analysis and recovery protocols for
-                  compromised digital assets
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <div className="flex justify-between text-sm">
-                    <span>Recovery Rate</span>
-                    <span className="text-primary font-medium">87.3%</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span>Active Cases</span>
-                    <span className="text-accent font-medium">23</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span>Assets Recovered</span>
-                    <span className="text-primary font-medium">$156M</span>
+                    <span>New Breaches (24h)</span>
+                    <span className="text-destructive font-medium">23</span>
                   </div>
                 </div>
               </CardContent>
@@ -243,30 +190,104 @@ export default function Index() {
                   <AlertTriangle className="w-8 h-8 text-accent group-hover:scale-110 transition-transform" />
                   <Badge
                     variant="secondary"
-                    className="bg-destructive/20 text-destructive"
+                    className="bg-accent/20 text-accent"
                   >
-                    Alert
+                    Scanning
                   </Badge>
                 </div>
-                <CardTitle className="text-xl">Dark Web Intelligence</CardTitle>
+                <CardTitle className="text-xl">
+                  Malware & Exploit Tracking
+                </CardTitle>
                 <CardDescription>
-                  Deep monitoring of underground markets and threat actor
-                  communications
+                  Track crypto phishing kits, malware campaigns, and exploit
+                  development in underground forums
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
                   <div className="flex justify-between text-sm">
-                    <span>Sources Monitored</span>
-                    <span className="text-accent font-medium">347</span>
+                    <span>Phishing Kits</span>
+                    <span className="text-destructive font-medium">1,247</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span>Intel Reports</span>
-                    <span className="text-primary font-medium">89/day</span>
+                    <span>Active Campaigns</span>
+                    <span className="text-accent font-medium">89</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span>New Exploits</span>
+                    <span className="text-destructive font-medium">34</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-300 group">
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  <Globe className="w-8 h-8 text-primary group-hover:scale-110 transition-transform" />
+                  <Badge
+                    variant="secondary"
+                    className="bg-primary/20 text-primary"
+                  >
+                    Live
+                  </Badge>
+                </div>
+                <CardTitle className="text-xl">
+                  Marketplace Monitoring
+                </CardTitle>
+                <CardDescription>
+                  Real-time surveillance of darknet marketplaces for stolen
+                  digital assets and financial instruments
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  <div className="flex justify-between text-sm">
+                    <span>Marketplaces</span>
+                    <span className="text-primary font-medium">67</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span>Listings Tracked</span>
+                    <span className="text-accent font-medium">45,789</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span>Crypto Assets Listed</span>
+                    <span className="text-destructive font-medium">2,456</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card/50 backdrop-blur-sm border-accent/20 hover:border-accent/40 transition-all duration-300 group">
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  <Users className="w-8 h-8 text-accent group-hover:scale-110 transition-transform" />
+                  <Badge
+                    variant="secondary"
+                    className="bg-accent/20 text-accent"
+                  >
+                    Monitoring
+                  </Badge>
+                </div>
+                <CardTitle className="text-xl">Forum Intelligence</CardTitle>
+                <CardDescription>
+                  Track threat actor discussions, technique sharing, and
+                  emerging attack planning across underground forums
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  <div className="flex justify-between text-sm">
+                    <span>Forums Monitored</span>
+                    <span className="text-accent font-medium">247</span>
                   </div>
                   <div className="flex justify-between text-sm">
                     <span>Threat Actors</span>
-                    <span className="text-destructive font-medium">1,892</span>
+                    <span className="text-destructive font-medium">8,923</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span>Posts Analyzed</span>
+                    <span className="text-primary font-medium">1.2M</span>
                   </div>
                 </div>
               </CardContent>
@@ -280,65 +301,65 @@ export default function Index() {
                     variant="secondary"
                     className="bg-primary/20 text-primary"
                   >
-                    Analyzing
+                    AI-Powered
                   </Badge>
                 </div>
-                <CardTitle className="text-xl">
-                  Market Manipulation Detection
-                </CardTitle>
+                <CardTitle className="text-xl">Scam Domain Detection</CardTitle>
                 <CardDescription>
-                  Advanced algorithms detecting pump-and-dump schemes and
-                  coordinated attacks
+                  AI-powered detection of fake exchanges, phishing sites, and
+                  fraudulent DeFi frontends targeting crypto users
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
                   <div className="flex justify-between text-sm">
-                    <span>Markets Tracked</span>
-                    <span className="text-primary font-medium">2,456</span>
+                    <span>Domains Scanned</span>
+                    <span className="text-primary font-medium">2.8M</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span>Manipulations Detected</span>
-                    <span className="text-destructive font-medium">34</span>
+                    <span>Scam Sites Found</span>
+                    <span className="text-destructive font-medium">12,847</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span>Prevention Rate</span>
-                    <span className="text-accent font-medium">91.2%</span>
+                    <span>Takedown Success</span>
+                    <span className="text-accent font-medium">89.2%</span>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="bg-card/50 backdrop-blur-sm border-accent/20 hover:border-accent/40 transition-all duration-300 group">
+            <Card className="bg-card/50 backdrop-blur-sm border-warning/20 hover:border-warning/40 transition-all duration-300 group">
               <CardHeader>
                 <div className="flex items-center justify-between">
-                  <Globe className="w-8 h-8 text-accent group-hover:scale-110 transition-transform" />
+                  <Lock className="w-8 h-8 text-warning group-hover:scale-110 transition-transform" />
                   <Badge
                     variant="secondary"
-                    className="bg-accent/20 text-accent"
+                    className="bg-warning/20 text-warning"
                   >
-                    Global
+                    Gemini-AI
                   </Badge>
                 </div>
-                <CardTitle className="text-xl">Compliance Automation</CardTitle>
+                <CardTitle className="text-xl">
+                  Crypto Threat Analysis
+                </CardTitle>
                 <CardDescription>
-                  Real-time regulatory compliance across 67 jurisdictions with
-                  automated reporting
+                  Gemini AI-enhanced detection of wallet compromises, DeFi
+                  exploits, and blockchain-specific attack vectors
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
                   <div className="flex justify-between text-sm">
-                    <span>Jurisdictions</span>
-                    <span className="text-accent font-medium">67</span>
+                    <span>Wallet Compromises</span>
+                    <span className="text-destructive font-medium">456</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span>Compliance Score</span>
-                    <span className="text-primary font-medium">98.9%</span>
+                    <span>DeFi Exploits</span>
+                    <span className="text-destructive font-medium">78</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span>Auto Reports</span>
-                    <span className="text-accent font-medium">247/month</span>
+                    <span>Prevention Rate</span>
+                    <span className="text-accent font-medium">94.7%</span>
                   </div>
                 </div>
               </CardContent>
@@ -347,102 +368,366 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Threat Analysis Interface */}
+      {/* Darknet Intelligence Interface */}
       <section className="py-24 bg-gradient-to-r from-card/20 to-card/10">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Threat Analysis Interface
+                Darknet Intelligence Console
               </h2>
               <p className="text-xl text-muted-foreground">
-                Submit transaction hashes, wallet addresses, or suspicious
-                activity for real-time AI analysis
+                Search darknet databases, monitor threat actor communications,
+                and investigate digital asset compromises
               </p>
             </div>
 
-            <Card className="bg-card/50 backdrop-blur-sm border-primary/20">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Eye className="w-5 h-5 text-primary" />
-                  Intelligence Analysis Console
-                </CardTitle>
-                <CardDescription>
-                  Input data for comprehensive threat assessment and risk
-                  scoring
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div>
-                  <label
-                    htmlFor="threat-input"
-                    className="block text-sm font-medium mb-2"
-                  >
-                    Transaction Data / Wallet Address / Suspicious Activity
-                  </label>
-                  <Textarea
-                    id="threat-input"
-                    placeholder="Enter transaction hash, wallet address, or describe suspicious activity..."
-                    className="min-h-32 bg-background/50 border-primary/20 focus:border-primary"
-                  />
-                </div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              {/* Main Search Interface */}
+              <div className="lg:col-span-2">
+                <Card className="bg-card/50 backdrop-blur-sm border-primary/20">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <Eye className="w-5 h-5 text-primary" />
+                      Intelligence Search Console
+                    </CardTitle>
+                    <CardDescription>
+                      Search across credential databases, forums, marketplaces,
+                      and exploit repositories
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+                    <div>
+                      <label
+                        htmlFor="search-input"
+                        className="block text-sm font-medium mb-2"
+                      >
+                        Search Query (Email, Domain, Wallet Address, Username,
+                        etc.)
+                      </label>
+                      <Input
+                        id="search-input"
+                        placeholder="e.g., binance.com, wallet:1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa, user@example.com"
+                        className="bg-background/50 border-primary/20 focus:border-primary"
+                      />
+                    </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label
-                      htmlFor="analysis-type"
-                      className="block text-sm font-medium mb-2"
-                    >
-                      Analysis Type
-                    </label>
-                    <select
-                      id="analysis-type"
-                      className="w-full p-3 rounded-md bg-background/50 border border-primary/20 focus:border-primary text-foreground"
-                    >
-                      <option>Comprehensive Scan</option>
-                      <option>Quick Assessment</option>
-                      <option>Deep Forensics</option>
-                      <option>Pattern Recognition</option>
-                    </select>
-                  </div>
+                    {/* Intelligence Type Filters */}
+                    <div>
+                      <label className="block text-sm font-medium mb-3">
+                        Intelligence Type Filters
+                      </label>
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        {[
+                          {
+                            label: "Credentials",
+                            count: "2.4M",
+                            color: "destructive",
+                          },
+                          { label: "Malware", count: "156K", color: "accent" },
+                          {
+                            label: "Marketplace",
+                            count: "89K",
+                            color: "primary",
+                          },
+                          { label: "Forum", count: "1.2M", color: "warning" },
+                        ].map((filter, idx) => (
+                          <Button
+                            key={idx}
+                            variant="outline"
+                            className={`justify-between h-auto py-3 border-${filter.color}/20 hover:bg-${filter.color}/10`}
+                          >
+                            <span className="text-sm">{filter.label}</span>
+                            <Badge variant="secondary" className="text-xs">
+                              {filter.count}
+                            </Badge>
+                          </Button>
+                        ))}
+                      </div>
+                    </div>
 
-                  <div>
-                    <label
-                      htmlFor="priority"
-                      className="block text-sm font-medium mb-2"
-                    >
-                      Priority Level
-                    </label>
-                    <select
-                      id="priority"
-                      className="w-full p-3 rounded-md bg-background/50 border border-primary/20 focus:border-primary text-foreground"
-                    >
-                      <option>Standard</option>
-                      <option>High</option>
-                      <option>Critical</option>
-                      <option>Emergency</option>
-                    </select>
-                  </div>
-                </div>
+                    {/* Advanced Filters */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                      <div>
+                        <label className="block text-sm font-medium mb-2">
+                          Time Range
+                        </label>
+                        <select className="w-full p-3 rounded-md bg-background/50 border border-primary/20 focus:border-primary text-foreground">
+                          <option>Last 24 hours</option>
+                          <option>Last 7 days</option>
+                          <option>Last 30 days</option>
+                          <option>Last 90 days</option>
+                          <option>All time</option>
+                        </select>
+                      </div>
 
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="flex-1 bg-primary hover:bg-primary/90">
-                    <Zap className="w-4 h-4 mr-2" />
-                    Analyze Threat
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="border-accent text-accent hover:bg-accent/10"
-                  >
-                    <Activity className="w-4 h-4 mr-2" />
-                    Live Monitor
-                  </Button>
-                  <Button variant="outline" className="border-primary/50">
-                    Load Sample Data
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+                      <div>
+                        <label className="block text-sm font-medium mb-2">
+                          Risk Level
+                        </label>
+                        <select className="w-full p-3 rounded-md bg-background/50 border border-primary/20 focus:border-primary text-foreground">
+                          <option>All Levels</option>
+                          <option>High Risk</option>
+                          <option>Medium Risk</option>
+                          <option>Low Risk</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <label className="block text-sm font-medium mb-2">
+                          Source Reliability
+                        </label>
+                        <select className="w-full p-3 rounded-md bg-background/50 border border-primary/20 focus:border-primary text-foreground">
+                          <option>All Sources</option>
+                          <option>Verified Only</option>
+                          <option>High Confidence</option>
+                          <option>Medium Confidence</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col sm:flex-row gap-4">
+                      <Button className="flex-1 bg-primary hover:bg-primary/90">
+                        <Zap className="w-4 h-4 mr-2" />
+                        Search Intelligence
+                      </Button>
+                      <Button
+                        variant="outline"
+                        className="border-accent text-accent hover:bg-accent/10"
+                      >
+                        <Activity className="w-4 h-4 mr-2" />
+                        Live Monitor
+                      </Button>
+                      <Button
+                        variant="outline"
+                        className="border-warning text-warning hover:bg-warning/10"
+                      >
+                        Advanced Query
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Search Analytics & Alert Rules */}
+              <div className="space-y-6">
+                {/* Search Analytics */}
+                <Card className="bg-card/50 backdrop-blur-sm border-accent/20">
+                  <CardHeader>
+                    <CardTitle className="text-base flex items-center gap-2">
+                      <BarChart3 className="w-4 h-4 text-accent" />
+                      Search Analytics
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <div className="space-y-3">
+                        <div className="flex justify-between items-center">
+                          <span className="text-sm text-muted-foreground">
+                            Today's Searches
+                          </span>
+                          <span className="text-sm font-medium">2,847</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-sm text-muted-foreground">
+                            Total Hits
+                          </span>
+                          <span className="text-sm font-medium text-destructive">
+                            156,789
+                          </span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-sm text-muted-foreground">
+                            New Records (24h)
+                          </span>
+                          <span className="text-sm font-medium text-accent">
+                            4,567
+                          </span>
+                        </div>
+                      </div>
+
+                      <div className="border-t border-primary/20 pt-4">
+                        <h4 className="text-sm font-medium mb-3">
+                          Top Search Terms
+                        </h4>
+                        <div className="space-y-2">
+                          {[
+                            { term: "crypto wallet", hits: "12.4K" },
+                            { term: "binance", hits: "8.9K" },
+                            { term: "metamask", hits: "6.7K" },
+                            { term: "coinbase", hits: "5.2K" },
+                          ].map((item, idx) => (
+                            <div
+                              key={idx}
+                              className="flex justify-between text-xs"
+                            >
+                              <span className="text-muted-foreground">
+                                {item.term}
+                              </span>
+                              <span className="text-accent">{item.hits}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Alert Rules */}
+                <Card className="bg-card/50 backdrop-blur-sm border-warning/20">
+                  <CardHeader>
+                    <CardTitle className="text-base flex items-center gap-2">
+                      <AlertTriangle className="w-4 h-4 text-warning" />
+                      Alert Rules
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <div className="space-y-3">
+                        <h4 className="text-sm font-medium">
+                          Notify me when...
+                        </h4>
+
+                        <div className="space-y-2">
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="w-full justify-start text-xs h-8 border-destructive/20 hover:bg-destructive/10"
+                          >
+                            + My domain appears in breach
+                          </Button>
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="w-full justify-start text-xs h-8 border-accent/20 hover:bg-accent/10"
+                          >
+                            + Wallet address leaked
+                          </Button>
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="w-full justify-start text-xs h-8 border-primary/20 hover:bg-primary/10"
+                          >
+                            + New phishing kit found
+                          </Button>
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="w-full justify-start text-xs h-8 border-warning/20 hover:bg-warning/10"
+                          >
+                            + Threat actor mentions company
+                          </Button>
+                        </div>
+                      </div>
+
+                      <div className="border-t border-primary/20 pt-4">
+                        <h4 className="text-sm font-medium mb-3">
+                          Active Alerts (3)
+                        </h4>
+                        <div className="space-y-2">
+                          {[
+                            {
+                              text: "Domain monitoring",
+                              status: "active",
+                              color: "accent",
+                            },
+                            {
+                              text: "Credential leaks",
+                              status: "triggered",
+                              color: "destructive",
+                            },
+                            {
+                              text: "Threat mentions",
+                              status: "active",
+                              color: "primary",
+                            },
+                          ].map((alert, idx) => (
+                            <div
+                              key={idx}
+                              className="flex items-center justify-between text-xs"
+                            >
+                              <span className="text-muted-foreground">
+                                {alert.text}
+                              </span>
+                              <Badge
+                                variant={
+                                  alert.status === "triggered"
+                                    ? "destructive"
+                                    : "secondary"
+                                }
+                                className="text-xs"
+                              >
+                                {alert.status}
+                              </Badge>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Gemini AI Crypto Boost */}
+                <Card className="bg-card/50 backdrop-blur-sm border-warning/20">
+                  <CardHeader>
+                    <CardTitle className="text-base flex items-center gap-2">
+                      <Zap className="w-4 h-4 text-warning" />
+                      Gemini AI Boost
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-3">
+                      <p className="text-xs text-muted-foreground">
+                        Enhanced with Gemini AI for crypto-specific threat
+                        detection
+                      </p>
+
+                      <div className="space-y-2">
+                        <div className="flex justify-between text-xs">
+                          <span className="text-muted-foreground">
+                            Wallet Leaks Detected
+                          </span>
+                          <span className="text-destructive font-medium">
+                            1,247
+                          </span>
+                        </div>
+                        <div className="flex justify-between text-xs">
+                          <span className="text-muted-foreground">
+                            Phishing Kits Found
+                          </span>
+                          <span className="text-destructive font-medium">
+                            89
+                          </span>
+                        </div>
+                        <div className="flex justify-between text-xs">
+                          <span className="text-muted-foreground">
+                            Scam Domains
+                          </span>
+                          <span className="text-destructive font-medium">
+                            456
+                          </span>
+                        </div>
+                        <div className="flex justify-between text-xs">
+                          <span className="text-muted-foreground">
+                            DeFi Exploits
+                          </span>
+                          <span className="text-destructive font-medium">
+                            23
+                          </span>
+                        </div>
+                      </div>
+
+                      <Button
+                        size="sm"
+                        className="w-full bg-warning hover:bg-warning/90 text-warning-foreground"
+                      >
+                        Enhanced Crypto Scan
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
