@@ -13,6 +13,7 @@ import AIChat from "./pages/AIChat";
 import Portfolio from "./pages/Portfolio";
 import Analytics from "./pages/Analytics";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ function AppContent() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/analytics" element={<Analytics />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route
           path="/incidents"
           element={
