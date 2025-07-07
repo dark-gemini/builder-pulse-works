@@ -64,6 +64,7 @@ export default function Index() {
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                onClick={() => (window.location.href = "/operations")}
               >
                 <Eye className="w-5 h-5 mr-2" />
                 Access Intelligence Dashboard
@@ -72,6 +73,7 @@ export default function Index() {
                 size="lg"
                 variant="outline"
                 className="border-accent text-accent hover:bg-accent/10"
+                onClick={() => (window.location.href = "/ai-chat")}
               >
                 <Activity className="w-5 h-5 mr-2" />
                 Live Threat Analysis
