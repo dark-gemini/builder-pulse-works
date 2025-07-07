@@ -57,6 +57,21 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        gemini: {
+          dark: "#0d1226",
+          deep: "#1a2036",
+          blue: "#007bff",
+          cyan: "#00bcd4",
+          slate: {
+            100: "#e2e8f0",
+            300: "#cbd5e1",
+            400: "#94a3b8",
+            600: "#475569",
+            700: "#334155",
+            800: "#1e293b",
+            900: "#0f172a",
+          },
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
